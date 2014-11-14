@@ -1,0 +1,18 @@
+Tecnología
+----------
+- IDE - Eclipse
+- Lenguaje - Java 7
+
+Declaración de Variables
+------------------------
+- Deben ser nombres descriptivos
+- Su longitud no debe ser superior a 15 caracteres
+- Siempre comenzar con un caracter en minúscula
+- Si son dos palabras, la segundo comenzar con mayuscula
+- Nombres de arreglos en plural
+- e.g. numCuenta, nombre
+
+Nombres de Métdos
+-----------------
+- Deben ser verboSustantivo descriptivo de lo que hace y sobre que actua
+- e.g. modificarCuenta, asignarNombre
