@@ -22,7 +22,7 @@ public class PostgresConn {
     
     private PostgresConn(){};
 
-    public static Connection createConnection() {
+    private static Connection createConnection() {
         try {
             Class.forName(DRIVER);
             conexion = DriverManager
