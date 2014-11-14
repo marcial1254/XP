@@ -3,8 +3,20 @@ Tecnología
 - IDE - Eclipse
 - Lenguaje - Java 7
 
+Buenas Prácticas
+----------------
+- Ningún fiche debe superar las 1000 líneas
+
+Entorno Gráfico
+---------------
+- Las ventanas será de 960px de ancho por el alto necesario
+- Se usará la tipografía por defecto, en tamaño por defecto y color negro
+- Se pude utilizar convinaciones de colores azul RGB 001a67 y verde RGB 78b81c
+
+
 Declaración de Variables
 ------------------------
+- Declarar una variable por línea
 - Deben ser nombres descriptivos
 - Su longitud no debe ser superior a 15 caracteres
 - Siempre comenzar con un caracter en minúscula
