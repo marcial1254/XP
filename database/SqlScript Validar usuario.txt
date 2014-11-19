@@ -1,0 +1,31 @@
+CREATE TABLE usuario
+(
+ id_usuario serial NOT NULL,
+ login character varying(20),
+ password character varying(20),
+ CONSTRAINT pk_usuario PRIMARY KEY(id_usuario)
+);
+
+CREATE OR REPLACE FUNCTION validar_usuario(text, text)
+  RETURNS boolean AS
+$BODY$
+  DECLARE
+   respuesta boolean;
+   usuario ALIAS FOR $1;
+   contrasena ALIAS FOR $2;
+   temporal record;
+   cadena1 text;
+   cadena2 text;
+  BEGIN
+   respuesta := false;
+   FOR temporal IN SELECT * from usuario LOOP
+    cadena1 := temporal.login;
+    cadena2 := temporal.password;
+   IF (cadena1 = usuario AND cadena2 = contrasena) THEN
+    respuesta := true;
+   END IF;
+  END LOOP;
+ RETURN respuesta;
+END;
+$BODY$
+  LANGUAGE plpgsql VOLATILE;
